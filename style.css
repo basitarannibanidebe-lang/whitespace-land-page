@@ -111,6 +111,13 @@ header {
   z-index: 1;
 }
 .management-content span {
+  background-image: url(./public/marker.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* padding-top: 30px; */
+  display: inline-block;
+  height: 70px;
   position: relative;
   z-index: 2;
 }
@@ -174,6 +181,12 @@ header {
   z-index: 1;
 }
 .work-content span {
+  background-image: url(./public/marker1.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block;
+  height: 60px;
   position: relative;
   z-index: 2;
 }
@@ -259,6 +272,12 @@ header {
   z-index: 1;
 }
 .extension-content span {
+  background-image: url(./public/marker2.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block;
+  height: 60px;
   position: relative;
   z-index: 2;
 }
@@ -298,6 +317,12 @@ header {
   z-index: 1;
 }
 .needs-content span {
+            background-image: url(./public/marker3.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: inline-block;
+    height: 60px;
   position: relative;
   z-index: 2;
 }
@@ -314,4 +339,49 @@ header {
 .needs-button {
   display: flex;
   justify-content: center;
+}
+.plan {
+  background-color: white;
+  color: black;
+  padding-bottom: 20px;
+}
+.plan-content {
+  padding: 50px 10px;
+  /* margin-top: 20px; */
+  position: relative;
+}
+.plan-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.plan-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
+}
+
+.plan-content img {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  z-index: 1;
+}
+.plan-content span {
+            background-image: url(./public/marker4.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: inline-block;
+    height: 60px;
+  position: relative;
+  z-index: 2;
 }
