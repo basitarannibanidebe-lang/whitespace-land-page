@@ -1,102 +1,317 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #043873;
+body {
+  background-color: #043873;
 }
-header{
-    padding: 16px 16px;
-    background-color: #043873;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header {
+  padding: 16px 16px;
+  background-color: #043873;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.brand{
-    font-family: 'Inter', sans-serif;
-    color: white;
-    display: flex;
-    gap: 10px;
+.brand {
+  font-family: "Inter", sans-serif;
+  color: white;
+  display: flex;
+  gap: 10px;
 }
-.brand h1{
-    font-size: 20px;
+.logo {
+  width: 24px;
+  height: 24px;
 }
-.hero{
-    background-image: url(./public/mobile.png);
-    background-size: cover;
-    background-color: #043873;
-    color: white;
+.brand h1 {
+  font-size: 20px;
 }
-.hero-content{
-    padding: 50px 10px;
-    margin-top: 20px;
+.hero {
+  background-image: url(./public/mobile.png);
+  background-size: cover;
+  background-color: #043873;
+  color: white;
 }
-.hero-content h1{
-    font-family: 'Inter', sans-serif;
-    font-size: 36px;
-    font-style: bold;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
+.hero-content {
+  padding: 50px 10px;
+  margin-top: 20px;
 }
-.hero-content p{
-     font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    font-style: bold;
-    font-weight: 400;
-    text-align: center;
+.hero-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.hero-button button{
-    color: white;
-    background-color: #4F9CF9;
-    padding: 20px 40px;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    border: none;
-    border-radius: 8px;
+.hero-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
 }
-.hero-button{
-    display: flex;
-    justify-content: center;
+.hero-button button {
+  color: white;
+  background-color: #4f9cf9;
+  padding: 20px 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 8px;
 }
-.hero-image img{
-    width: 286px;
-    height: 191px;
-    background-color:#C4DEFD;
+.hero-button {
+  display: flex;
+  justify-content: center;
 }
-.hero-image{
-    display: flex;
-    justify-content: center;
-    margin-block: 70px;
+.hero-image img {
+  width: 286px;
+  height: 191px;
+  background-color: #c4defd;
 }
-.management{
-    background-color: white;
-    color: black;
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin-block: 70px;
 }
-.management-content{
-    padding: 50px 10px;
-    margin-top: 20px;
+.management {
+  background-color: white;
+  color: black;
+  padding-bottom: 20px;
 }
-.management-content h1{
-    font-family: 'Inter', sans-serif;
-    font-size: 36px;
-    font-style: bold;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
+.management-content {
+  padding: 50px 10px;
+  margin-top: 20px;
+  position: relative;
 }
-.management-content p{
-     font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    font-style: bold;
-    font-weight: 400;
-    text-align: center;
+.management-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
 }
-.management-content span{
-    background-image: url(./public/marker.png);
-    back
+.management-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
+}
+.management-content img {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  z-index: 1;
+}
+.management-content span {
+  position: relative;
+  z-index: 2;
+}
+.management-button button {
+  color: white;
+  background-color: #4f9cf9;
+  padding: 20px 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 8px;
+}
+.management-button {
+  display: flex;
+  justify-content: center;
+}
+.management-image img {
+  width: 286px;
+  height: 191px;
+  background-color: #c4defd;
+}
+.management-image {
+  display: flex;
+  justify-content: center;
+  margin-block: 70px;
+}
+.work {
+  background-color: white;
+  color: black;
+  padding-bottom: 20px;
+}
+.work-content {
+  padding: 50px 10px;
+  /* margin-top: 20px; */
+  position: relative;
+}
+.work-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.work-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
+}
+
+.work-content img {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 1;
+}
+.work-content span {
+  position: relative;
+  z-index: 2;
+}
+.work-button button {
+  color: white;
+  background-color: #4f9cf9;
+  padding: 20px 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 8px;
+}
+.work-button {
+  display: flex;
+  justify-content: center;
+}
+.work-image img {
+  width: 286px;
+  height: 259.74px;
+  /* background-color: #c4defd; */
+}
+.work-image {
+  display: flex;
+  justify-content: center;
+  margin-block: 70px;
+}
+.extension {
+  /* background-image: url(./public/mobile.png); */
+  background-size: cover;
+  background-color: #043873;
+  color: white;
+}
+.extension-content {
+  padding: 50px 10px;
+  margin-top: 20px;
+}
+.extension-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: bold;
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.extension-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
+}
+.extension-button button {
+  color: white;
+  background-color: #4f9cf9;
+  padding: 20px 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 8px;
+}
+.extension-button {
+  display: flex;
+  justify-content: center;
+}
+.extension-image img {
+  width: 286px;
+  height: 191px;
+  background-color: #c4defd;
+}
+.extension-image {
+  display: flex;
+  justify-content: center;
+  margin-block: 70px;
+}
+.extension-content img {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  z-index: 1;
+}
+.extension-content span {
+  position: relative;
+  z-index: 2;
+}
+.needs {
+  background-color: white;
+  color: black;
+  padding-bottom: 20px;
+}
+.needs-content {
+  padding: 50px 10px;
+  /* margin-top: 20px; */
+  position: relative;
+}
+.needs-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.needs-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
+}
+
+.needs-content img {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  z-index: 1;
+}
+.needs-content span {
+  position: relative;
+  z-index: 2;
+}
+.needs-button button {
+  color: white;
+  background-color: #4f9cf9;
+  padding: 20px 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 8px;
+}
+.needs-button {
+  display: flex;
+  justify-content: center;
 }
