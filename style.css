@@ -649,12 +649,12 @@ h1 {
 .app-content {
   margin-bottom: 60px;
 }
-.say{
+.say {
   padding: 100px 16px;
   background-color: white;
 }
 .say-content {
-    margin-bottom:60px ;
+  margin-bottom: 60px;
 }
 .say-content h1 {
   font-family: "Inter", sans-serif;
@@ -668,7 +668,7 @@ h1 {
 }
 .say-content span {
   background-image: url(./public/mark3.png);
-  background-position: center ;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
   display: inline-block;
@@ -697,39 +697,185 @@ h1 {
   border-radius: 50%;
   background-color: #4f9cf9;
 }
-.card{
+.card {
   background-color: white;
   box-shadow: 15px 10px 20px 1px grey;
   border-radius: 10px;
   padding: 20px;
 }
-.card-up p{
+.card-up p {
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
 }
-.card-up img{
+.card-up img {
   margin-bottom: 32px;
 }
-.card-up{
+.card-up {
   padding-bottom: 40px;
-  border-bottom: 1px solid grey ;
+  border-bottom: 1px solid grey;
 }
-.card-down{
+.card-down {
   margin-top: 40px;
 }
-.card-down img{
+.card-down img {
   margin-bottom: 32px;
 }
-.avatar{
+.avatar {
   margin-bottom: 15px;
   font-weight: 700;
   font-style: bold;
   font-size: 18px;
 }
-.avater{
+.avater {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+.try {
+  /* background-color: #043873; */
+  padding: 100px 16px 32px;
+}
+.try h1 {
+  color: white;
+  margin-bottom: 24px;
+  background-position: bottom left;
+}
+.try p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+  /* border-bottom: 60px; */
+}
+.try-button button {
+  color: white;
+  margin-block: 40px;
+  background-color: #4f9cf9;
+  padding: 20px 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 8px;
+  /* border-top: 60px; */
+}
+.try > p {
+  margin-bottom: 40px;
+}
+.devices {
+  display: flex;
+  gap: 40px;
+}
+.footer-logo {
+  font-family: "Inter", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.foot {
+  width: 37px;
+  height: 37px;
+}
+
+.footer-logo h1 {
+  font-size: 28px;
+}
+
+footer {
+  padding: 140px 16px 32px;
+}
+.world p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+}
+.world{
+  margin-bottom: 80px;
+}
+.product{
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+}
+.product p:first-child{
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+}
+.over{
+  color: #FFE492;
+}
+.product{
+  margin-bottom: 80px;
+}
+.today {
+  margin-inline: 35px;
+  margin-bottom: 80px;
+  color: white;
+  padding-bottom: 20px;
+}
+.today-content {
+  padding: 50px 10px;
+  /* margin-top: 20px; */
+  position: relative;
+}
+.today-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.today-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
+}
+
+.today-content img {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  z-index: 1;
+}
+.today-content span {
+  background-image: url(./public/marker3.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block;
+  height: 60px;
+  position: relative;
+  z-index: 2;
+}
+.today-button button {
+  color: white;
+  background-color: #4f9cf9;
+  padding: 20px 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 8px;
+}
+.today-button {
+  display: flex;
+  justify-content: center;
 }
 
